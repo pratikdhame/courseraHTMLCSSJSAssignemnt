@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="newStyle.css">
+</head>
+<body>
+    <div class="header">
+        <div class="profile-name">
+            <p>Jane Doe</p>
+            <p>jdoe@email.com</p>
+            <p>+1 345 676 4598</p>
+        </div>
+        <nav class="navbar">
+            <a href="#about">About Me</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#recommendations">Recommendations</a>
+        </nav>
+    </div>
+    <section class="about-me" id="about">
+        <div class="about-content">
+            <img src="https://img6.arthub.ai/64a00797-3e59.webp" alt="Profile Image" class="profile-pic">
+            <div class="about-text">
+                <h1>Hi, I'm Jane Doe! <span class="wave">👋</span></h1>
+                <p>
+                    I am a full stack developer with 7 years of experience in both application 
+                    and presentation layers. I have worked on applications and microservices 
+                    deployed on IBM Cloud. I am an avid user of IBM Watson Services and have 
+                    worked on Watson Assistant NLU, Sentiment analyzer to name a few.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+            <div class="skill-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML Logo">
+                <p>HTML</p>
+                <p>4 years experience</p>
+            </div>
+            <div class="skill-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript Logo">
+                <p>JavaScript</p>
+                <p>3 years experience</p>
+            </div>
+            <div class="skill-card">
+                <img src="https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg" alt="Java Logo">
+                <p>Java</p>
+                <p>4 years experience</p>
+            </div>
+            <div class="skill-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React Logo">
+                <p>React</p>
+                <p>4 years experience</p>
+            </div>
+            <div class="skill-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" alt="Node.js Logo">
+                <p>Node.js</p>
+                <p>4 years experience</p>
+            </div>
+            <div class="skill-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg" alt="CSS Logo">
+                <p>CSS</p>
+                <p>4 years experience</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2>My Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <img src="https://via.placeholder.com/300x200.png?text=Project+One" alt="Project 1 Image">
+                <h3>Project One</h3>
+                <p>This is a brief description of Project One. It showcases the implementation of XYZ technology.</p>
+            </div>
+            <div class="project-card">
+                <img src="https://via.placeholder.com/300x200.png?text=Project+Two" alt="Project 2 Image">
+                <h3>Project Two</h3>
+                <p>This is a brief description of Project Two. It highlights the usage of ABC framework and tools.</p>
+            </div>
+            <div class="project-card">
+                <img src="https://via.placeholder.com/300x200.png?text=Project+Three" alt="Project 3 Image">
+                <h3>Project Three</h3>
+                <p>This is a brief description of Project Three. It involves DEF technology and methodologies.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="recommendations" id="recommendations">
+        <h2>Recommendations</h2>
+        <div class="recommendations-container">
+            <!-- Existing recommendations will be displayed here -->
+            <div class="recommendation-card">
+                <p>"John is an exceptional developer with a keen eye for detail."</p>
+                <h4>- Jane Doe</h4>
+            </div>
+            <div class="recommendation-card">
+                <p>"Amazing work ethic and outstanding problem-solving skills."</p>
+                <h4>- Sam Smith</h4>
+            </div>
+            <div class="recommendation-card">
+                <p>"A true professional who always delivers high-quality work."</p>
+                <h4>- Lisa Ray</h4>
+            </div>
+        </div>
+    
+        <!-- Form to add a new recommendation -->
+        <form id="recommendation-form">
+            <h3>Add a Recommendation</h3>
+            <textarea id="recommendation-text" placeholder="Write your recommendation here..." required></textarea>
+            <input type="text" id="recommendation-author" placeholder="Your name" required>
+            <button type="submit">Submit Recommendation</button>
+        </form>
+    
+        <!-- Confirmation message -->
+        <div id="confirmation-message" style="display: none;">
+            <p>Thank you for your recommendation!</p>
+        </div>
+    </section>
+
+    <!-- Home Icon -->
+<a href="#home" id="home-icon">
+    <img src="https://img.icons8.com/material-outlined/48/000000/home--v2.png" alt="Home Icon">
+</a>
+
+<!-- Pop-up confirmation message -->
+<div id="popup-confirmation" class="popup">
+    <p>Thank you for your recommendation!</p>
+    <button onclick="closePopup()">Close</button>
+</div>
+
+    
+    
+    
+    
+    <script src="newScript.js"></script>
+</body>
+</html>
